@@ -1,0 +1,150 @@
+[TraceId: ] 2024-03-23 16:01:29.225 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.10 on Leonard-PC with PID 21980 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+[TraceId: ] 2024-03-23 16:01:29.228 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-03-23 16:01:30.059 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-03-23 16:01:30.069 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-03-23 16:01:30.069 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-03-23 16:01:30.127 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-03-23 16:01:30.127 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 861 ms
+[TraceId: ] 2024-03-23 16:01:30.462 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-03-23 16:01:30.469 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.642 seconds (JVM running for 2.564)
+[TraceId: ] 2024-03-23 16:01:59.475 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 16:01:59.476 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 16:01:59.476 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[TraceId: 354400aa-3d42-4a6a-9d05-b364c4145915] 2024-03-23 16:01:59.613 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"","sex":null,"age":19,"email":"1212@qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'user' on field 'sex': rejected value [null]; codes [NotNull.user.sex,NotNull.sex,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.sex,sex]; arguments []; default message [sex]]; default message [性别不能为空], 请求类: TestController, 请求方法: test =================================== 
+[TraceId: 354400aa-3d42-4a6a-9d05-b364c4145915] 2024-03-23 16:01:59.621 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 21ms, 出参: {"success":false,"message":"性别不能为空","errorCode":null,"data":null} =================================== 
+[TraceId: 63551410-6904-4e0a-9872-8f3f1873c311] 2024-03-23 16:02:23.334 [http-nio-8080-exec-2] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"","sex":null,"age":109,"email":"1212qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'user' on field 'email': rejected value [1212qq.com]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@6a38f537,.*]; default message [邮箱格式不正确]
+Field error in object 'user' on field 'age': rejected value [109]; codes [Max.user.age,Max.age,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.age,age]; arguments []; default message [age],100]; default message [年龄必须小于或等于100]
+Field error in object 'user' on field 'sex': rejected value [null]; codes [NotNull.user.sex,NotNull.sex,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.sex,sex]; arguments []; default message [sex]]; default message [性别不能为空], 请求类: TestController, 请求方法: test =================================== 
+[TraceId: 63551410-6904-4e0a-9872-8f3f1873c311] 2024-03-23 16:02:23.334 [http-nio-8080-exec-2] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 0ms, 出参: {"success":false,"message":"邮箱格式不正确, 年龄必须小于或等于100, 性别不能为空","errorCode":null,"data":null} =================================== 
+[TraceId: ] 2024-03-23 16:30:23.723 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.10 on Leonard-PC with PID 22308 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+[TraceId: ] 2024-03-23 16:30:23.724 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-03-23 16:30:24.348 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-03-23 16:30:24.354 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-03-23 16:30:24.354 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-03-23 16:30:24.390 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-03-23 16:30:24.390 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 638 ms
+[TraceId: ] 2024-03-23 16:30:24.629 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-03-23 16:30:24.635 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.227 seconds (JVM running for 1.643)
+[TraceId: ] 2024-03-23 16:30:27.553 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 16:30:27.553 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 16:30:27.554 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[TraceId: 437fcbf8-102c-4324-a17b-404296e2c9fb] 2024-03-23 16:30:27.672 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"","sex":null,"age":109,"email":"1212qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'user' on field 'sex': rejected value [null]; codes [NotNull.user.sex,NotNull.sex,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.sex,sex]; arguments []; default message [sex]]; default message [性别不能为空]
+Field error in object 'user' on field 'age': rejected value [109]; codes [Max.user.age,Max.age,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.age,age]; arguments []; default message [age],100]; default message [年龄必须小于或等于100]
+Field error in object 'user' on field 'email': rejected value [1212qq.com]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4b3d37e3,.*]; default message [邮箱格式不正确], 请求类: TestController, 请求方法: test =================================== 
+[TraceId: 437fcbf8-102c-4324-a17b-404296e2c9fb] 2024-03-23 16:30:27.680 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 23ms, 出参: {"success":false,"message":"性别不能为空, 年龄必须小于或等于100, 邮箱格式不正确","errorCode":null,"data":null} =================================== 
+[TraceId: ] 2024-03-23 17:16:53.757 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.10 on Leonard-PC with PID 22448 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+[TraceId: ] 2024-03-23 17:16:53.759 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-03-23 17:16:54.384 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-03-23 17:16:54.390 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-03-23 17:16:54.390 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-03-23 17:16:54.427 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-03-23 17:16:54.428 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 640 ms
+[TraceId: ] 2024-03-23 17:16:54.690 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-03-23 17:16:54.696 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.233 seconds (JVM running for 1.875)
+[TraceId: ] 2024-03-23 17:17:23.206 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 17:17:23.206 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 17:17:23.207 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[TraceId: ] 2024-03-23 17:17:23.223 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported]
+[TraceId: ace2958b-9324-487a-b709-8291bb4acb3b] 2024-03-23 17:17:36.215 [http-nio-8080-exec-2] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"","sex":null,"age":109,"email":"1212qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'user' on field 'age': rejected value [109]; codes [Max.user.age,Max.age,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.age,age]; arguments []; default message [age],100]; default message [年龄必须小于或等于100]
+Field error in object 'user' on field 'email': rejected value [1212qq.com]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@6234c7f9,.*]; default message [邮箱格式不正确]
+Field error in object 'user' on field 'sex': rejected value [null]; codes [NotNull.user.sex,NotNull.sex,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.sex,sex]; arguments []; default message [sex]]; default message [性别不能为空], 请求类: TestController, 请求方法: test =================================== 
+[TraceId: ] 2024-03-23 17:17:36.222 [http-nio-8080-exec-2] WARN  c.l.weblog.common.exception.GlobalExceptionHandler - /test request fail, errorCode: 20000, errorMessage: 该产品不存在（测试使用）
+[TraceId: cecf6533-42b6-491d-9352-ff9feb3c3652] 2024-03-23 17:27:57.816 [http-nio-8080-exec-3] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"","sex":null,"age":109,"email":"1212qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'user' on field 'email': rejected value [1212qq.com]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@6234c7f9,.*]; default message [邮箱格式不正确]
+Field error in object 'user' on field 'age': rejected value [109]; codes [Max.user.age,Max.age,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.age,age]; arguments []; default message [age],100]; default message [年龄必须小于或等于100]
+Field error in object 'user' on field 'sex': rejected value [null]; codes [NotNull.user.sex,NotNull.sex,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.sex,sex]; arguments []; default message [sex]]; default message [性别不能为空], 请求类: TestController, 请求方法: test =================================== 
+[TraceId: ] 2024-03-23 17:27:57.817 [http-nio-8080-exec-3] WARN  c.l.weblog.common.exception.GlobalExceptionHandler - /test request fail, errorCode: 20000, errorMessage: 该产品不存在（测试使用）
+[TraceId: ] 2024-03-23 17:28:11.976 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.10 on Leonard-PC with PID 14460 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+[TraceId: ] 2024-03-23 17:28:11.979 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-03-23 17:28:12.610 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-03-23 17:28:12.616 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-03-23 17:28:12.616 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-03-23 17:28:12.660 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-03-23 17:28:12.660 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 652 ms
+[TraceId: ] 2024-03-23 17:28:12.936 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-03-23 17:28:12.943 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.294 seconds (JVM running for 1.671)
+[TraceId: ] 2024-03-23 17:28:16.481 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 17:28:16.481 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2024-03-23 17:28:16.481 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[TraceId: db5da07e-d8f6-4761-a03d-ab495438efe1] 2024-03-23 17:28:16.595 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"","sex":null,"age":109,"email":"1212qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'user' on field 'age': rejected value [109]; codes [Max.user.age,Max.age,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.age,age]; arguments []; default message [age],100]; default message [年龄必须小于或等于100]
+Field error in object 'user' on field 'email': rejected value [1212qq.com]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@7f5c36bb,.*]; default message [邮箱格式不正确]
+Field error in object 'user' on field 'sex': rejected value [null]; codes [NotNull.user.sex,NotNull.sex,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.sex,sex]; arguments []; default message [sex]]; default message [性别不能为空], 请求类: TestController, 请求方法: test =================================== 
+[TraceId: ] 2024-03-23 17:28:16.605 [http-nio-8080-exec-1] ERROR c.l.weblog.common.exception.GlobalExceptionHandler - /test request error, 
+java.lang.ArithmeticException: / by zero
+	at com.leonard.weblog.web.controller.TestController.test(TestController.java:55)
+	at com.leonard.weblog.web.controller.TestController$$FastClassBySpringCGLIB$$b9074588.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.leonard.weblog.common.aspect.ApiOperationLogAspect.doAround(ApiOperationLogAspect.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.leonard.weblog.web.controller.TestController$$EnhancerBySpringCGLIB$$7bff2c2d.test(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)

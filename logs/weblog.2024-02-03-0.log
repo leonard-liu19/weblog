@@ -1,0 +1,42 @@
+[TraceId: ] 2024-02-03 23:06:39.096 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.10 on Leonard-PC with PID 12608 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+[TraceId: ] 2024-02-03 23:06:39.098 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-02-03 23:06:39.874 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-02-03 23:06:39.884 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-02-03 23:06:39.884 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-02-03 23:06:39.936 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-02-03 23:06:39.936 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 801 ms
+[TraceId: ] 2024-02-03 23:06:40.207 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-02-03 23:06:40.212 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.491 seconds (JVM running for 2.278)
+[TraceId: ] 2024-02-03 23:06:43.921 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2024-02-03 23:06:43.921 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2024-02-03 23:06:43.921 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[TraceId: f071ed27-8ec7-4fb4-89ba-706e6d6ed6c1] 2024-02-03 23:06:44.042 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"","sex":null,"age":10,"email":"1212qq"}, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'user' on field 'sex': rejected value [null]; codes [NotNull.user.sex,NotNull.sex,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.sex,sex]; arguments []; default message [sex]]; default message [性别不能为空]
+Field error in object 'user' on field 'email': rejected value [1212qq]; codes [Email.user.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@6e7c2f41,.*]; default message [邮箱格式不正确]
+Field error in object 'user' on field 'age': rejected value [10]; codes [Min.user.age,Min.age,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.age,age]; arguments []; default message [age],18]; default message [年龄必须大于或等于18], 请求类: TestController, 请求方法: test =================================== 
+[TraceId: f071ed27-8ec7-4fb4-89ba-706e6d6ed6c1] 2024-02-03 23:06:44.050 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 20ms, 出参: {"success":false,"message":"性别不能为空, 邮箱格式不正确, 年龄必须大于或等于18","errorCode":null,"data":null} =================================== 
+[TraceId: eddc3475-b0b9-4694-b405-708eff6cc8fd] 2024-02-03 23:07:17.800 [http-nio-8080-exec-2] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"sum","sex":1,"age":19,"email":"1212@qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, 请求类: TestController, 请求方法: test =================================== 
+[TraceId: eddc3475-b0b9-4694-b405-708eff6cc8fd] 2024-02-03 23:07:17.801 [http-nio-8080-exec-2] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 1ms, 出参: {"success":true,"message":null,"errorCode":null,"data":null} =================================== 
+[TraceId: ] 2024-02-03 23:08:10.658 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.10 on Leonard-PC with PID 18268 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+[TraceId: ] 2024-02-03 23:08:10.661 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-02-03 23:08:11.285 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-02-03 23:08:11.290 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-02-03 23:08:11.290 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-02-03 23:08:11.328 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-02-03 23:08:11.329 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 636 ms
+[TraceId: ] 2024-02-03 23:08:11.593 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-02-03 23:08:11.600 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.259 seconds (JVM running for 1.632)
+[TraceId: ] 2024-02-03 23:17:15.077 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TraceId: ] 2024-02-03 23:17:15.078 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[TraceId: ] 2024-02-03 23:17:15.078 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[TraceId: 063298af-b9bc-4674-b679-e32cc217f526] 2024-02-03 23:17:15.192 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求开始: [测试接口], 入参: {"username":"sum","sex":1,"age":19,"email":"1212@qq.com"}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, 请求类: TestController, 请求方法: test =================================== 
+[TraceId: 063298af-b9bc-4674-b679-e32cc217f526] 2024-02-03 23:17:15.200 [http-nio-8080-exec-1] INFO  c.l.weblog.common.aspect.ApiOperationLogAspect - ====== 请求结束: [测试接口], 耗时: 22ms, 出参: {"success":true,"message":null,"errorCode":null,"data":null} =================================== 
+[TraceId: ] 2024-02-03 23:18:50.585 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.10 on Leonard-PC with PID 17508 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+[TraceId: ] 2024-02-03 23:18:50.588 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+[TraceId: ] 2024-02-03 23:18:51.128 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[TraceId: ] 2024-02-03 23:18:51.134 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[TraceId: ] 2024-02-03 23:18:51.134 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[TraceId: ] 2024-02-03 23:18:51.167 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[TraceId: ] 2024-02-03 23:18:51.167 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 554 ms
+[TraceId: ] 2024-02-03 23:18:51.381 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[TraceId: ] 2024-02-03 23:18:51.386 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 1.081 seconds (JVM running for 1.38)

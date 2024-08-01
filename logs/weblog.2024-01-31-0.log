@@ -1,0 +1,7 @@
+2024-01-31 23:44:15.236 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - Starting WeblogWebApplicationTests using Java 17.0.10 on Leonard-PC with PID 6284 (started by leonard in D:\Project\weblog\weblog-springboot\weblog-web)
+2024-01-31 23:44:15.237 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - The following profiles are active: prod
+2024-01-31 23:44:16.281 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - Started WeblogWebApplicationTests in 1.37 seconds (JVM running for 1.958)
+2024-01-31 23:44:16.607 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行Info级别日志
+2024-01-31 23:44:16.607 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行warn级别日志
+2024-01-31 23:44:16.607 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行Error级别日志
+2024-01-31 23:44:16.607 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行带有占位符的日志，作者：Leonard

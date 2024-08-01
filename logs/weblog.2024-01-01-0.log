@@ -1,0 +1,16 @@
+2024-01-01 23:19:23.975 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Starting WeblogWebApplication using Java 17.0.9 on LeonardLiu-PC with PID 11644 (D:\Project\weblog\weblog-springboot\weblog-web\target\classes started by leonard in D:\Project\weblog\weblog-springboot)
+2024-01-01 23:19:23.976 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - The following profiles are active: prod
+2024-01-01 23:19:24.366 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-01 23:19:24.371 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-01 23:19:24.371 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-01-01 23:19:24.406 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-01 23:19:24.406 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 408 ms
+2024-01-01 23:19:24.589 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-01 23:19:24.594 [main] INFO  com.leonard.weblog.web.WeblogWebApplication - Started WeblogWebApplication in 0.874 seconds (JVM running for 1.143)
+2024-01-01 23:19:40.008 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - Starting WeblogWebApplicationTests using Java 17.0.9 on LeonardLiu-PC with PID 7904 (started by leonard in D:\Project\weblog\weblog-springboot\weblog-web)
+2024-01-01 23:19:40.009 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - The following profiles are active: prod
+2024-01-01 23:19:40.746 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - Started WeblogWebApplicationTests in 1.022 seconds (JVM running for 1.568)
+2024-01-01 23:19:40.989 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行Info级别日志
+2024-01-01 23:19:40.989 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行warn级别日志
+2024-01-01 23:19:40.989 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行Error级别日志
+2024-01-01 23:19:40.989 [main] INFO  com.leonard.weblog.web.WeblogWebApplicationTests - 这是一行带有占位符的日志，作者：Leonard
