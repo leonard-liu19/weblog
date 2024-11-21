@@ -1,6 +1,7 @@
 package com.leonard.weblog.web.controller;
 import com.leonard.weblog.common.enums.ResponseCodeEnum;
 import com.leonard.weblog.common.exception.BizException;
+import com.leonard.weblog.common.utils.JsonUtil;
 import com.leonard.weblog.common.utils.Response;
 import com.leonard.weblog.web.model.User;
 import com.leonard.weblog.common.aspect.ApiOperationLog;
@@ -29,7 +30,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class TestController {
 
-    @PostMapping("/test")
+    @PostMapping("/admin/test")
     @ApiOperationLog(description = "测试接口")
     // 这里的@Validated告诉Spring需要对User对象执行校验； BindingResult是验证的结果对象，其中包含所有验证错误信息
     public Response test(@RequestBody @Validated User user /*, BindingResult bindingResult*/){
@@ -44,7 +45,7 @@ public class TestController {
        //      // return ResponseEntity.badRequest().body(errorMsg);
        //      return Response.fail(errorMsg);
        //  }
-
+        log.info(JsonUtil.toJsonString(user));
         // 返参
         // return ResponseEntity.ok("参数没有任何问题");
         return Response.success();

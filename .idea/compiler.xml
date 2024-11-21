@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="weblog-web" />
+        <module name="weblog-springboot-jwt" />
         <module name="weblog-module-admin" />
         <module name="weblog-module-common" />
+        <module name="weblog-web" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="weblog-module-admin" options="-parameters" />
       <module name="weblog-module-common" options="-parameters" />
       <module name="weblog-springboot" options="" />
+      <module name="weblog-springboot-jwt" options="-parameters" />
       <module name="weblog-web" options="-parameters" />
     </option>
   </component>
